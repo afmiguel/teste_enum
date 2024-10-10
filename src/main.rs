@@ -1,11 +1,8 @@
 /// Represents the possible states of an animal.
 enum AnimalState {
-    /// The animal is extant (still exists).
-    Extant,
-    /// The animal is extinct (no longer exists).
-    Extinct,
-    /// The animal is possibly extinct (its status is unclear, but it may be extinct).
-    PossiblyExtinct,
+    Extant,             /// The animal is extant (still exists).
+    Extinct,            /// The animal is extinct (no longer exists).
+    PossiblyExtinct,    /// The animal is possibly extinct (its status is unclear, but it may be extinct).
 }
 
 /// Prints the state of the given animal.
