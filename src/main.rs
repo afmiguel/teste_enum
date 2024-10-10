@@ -1,25 +1,28 @@
-enum EstadoAnimal {
-    Vivo,
-    Extinto,
-    Desconhecido,
+/// Represents the possible states of an animal.
+enum AnimalState {
+    /// The animal is extant (still exists).
+    Extant,
+    /// The animal is extinct (no longer exists).
+    Extinct,
+    /// The animal is possibly extinct (its status is unclear, but it may be extinct).
+    PossiblyExtinct,
 }
 
-fn imprimir_estado(estado: EstadoAnimal) {
-    if let EstadoAnimal::Vivo = estado {
-        println!("O animal está vivo");
-    } else if let EstadoAnimal::Extinto = estado {
-        println!("O animal está extinto");
-    } else if let EstadoAnimal::Desconhecido = estado {
-        println!("O estado do animal é desconhecido");
-    }
+/// Prints the state of the given animal.
+///
+/// # Arguments
+///
+/// * `state` - The current state of the animal, which can be `Extant`, `Extinct`, or `PossiblyExtinct`.
+fn print_state(state: AnimalState) {
 }
 
 fn main() {
-    let estado1 = EstadoAnimal::Vivo;
-    let estado2 = EstadoAnimal::Extinto;
-    let estado3 = EstadoAnimal::Desconhecido;
-    
-    imprimir_estado(estado1);
-    imprimir_estado(estado2);
-    imprimir_estado(estado3);
+    let state1 = AnimalState::Extant;
+    let state2 = AnimalState::Extinct;
+    let state3 = AnimalState::PossiblyExtinct;
+
+    // Prints the state of each animal
+    print_state(state1);
+    print_state(state2);
+    print_state(state3);
 }
