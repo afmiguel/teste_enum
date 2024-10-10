@@ -23,3 +23,4 @@ fn main() {
     print_state(state2);
     print_state(state3);
 }
+
